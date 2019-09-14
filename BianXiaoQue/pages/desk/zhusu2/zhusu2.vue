@@ -5,7 +5,8 @@
 				note="就诊日期:2019-1-22"
 				showBadge="true" 
 		        show-extra-icon="true" 
-		        :extra-icon="{color: '#FD962E',size: '60',type: 'contact'}">
+		        :extra-icon="{color: '#FD962E',size: '60',type: 'contact'}"
+				v-on:click="gotoIndex()">
 		    </uni-list-item>
 		</uni-list>	
         <view class='feedback-title'>
@@ -78,7 +79,12 @@
                     }
                 })
             },
-            
+            //页面跳转
+            gotoIndex(){
+            	uni.navigateTo({
+            	url: '../../room/sufferer/sufferer'
+            	});
+            },
         },
 		components: {
 			uniList,uniListItem,uniTag

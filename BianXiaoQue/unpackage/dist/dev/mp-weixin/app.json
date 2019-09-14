@@ -7,7 +7,8 @@
     "pages/room/yysufferer/yysufferer",
     "pages/desk/zhusu/zhusu",
     "pages/desk/zhusu2/zhusu2",
-    "pages/desk/chengyao/chengyao"
+    "pages/desk/chengyao/chengyao",
+    "pages/room/sufferer/sufferer"
   ],
   "subPackages": [],
   "window": {
@@ -48,6 +49,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap94.json"
+  "usingComponents": {}
 }

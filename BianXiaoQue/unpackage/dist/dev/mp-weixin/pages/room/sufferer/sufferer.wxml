@@ -1,0 +1,1 @@
+<view><uni-list vue-id="1" bind:__l="__l" vue-slots="{{['default']}}"><uni-list-item vue-id="{{('2')+','+('1')}}" title="牛魔王,男,58岁" note="就诊日期:2019-1-22" showBadge="true" show-extra-icon="true" extra-icon="{{$root.a0}}" data-event-opts="{{[['^click',[['gotoIndex']]]]}}" bind:click="__e" bind:__l="__l"></uni-list-item></uni-list></view>

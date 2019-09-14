@@ -39,6 +39,10 @@
             "path" : "pages/desk/chengyao/chengyao",
             "style" : {}
         }
+        ,{
+            "path" : "pages/room/sufferer/sufferer",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
