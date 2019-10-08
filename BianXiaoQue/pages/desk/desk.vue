@@ -5,7 +5,8 @@
 			note="就诊日期:2019-1-22"
 			showBadge="true" 
 	        show-extra-icon="true" 
-	        :extra-icon="{color: '#FD962E',size: '60',type: 'contact'}">
+	        :extra-icon="{color: '#FD962E',size: '60',type: 'contact'}"
+			v-on:click="gotoHuanzhexinxi()">
 	    </uni-list-item>
 	</uni-list>	
 		
@@ -16,57 +17,104 @@
 							note="主诉内容,保存后显示"
 							show-extra-icon="true" 
 							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
-							v-on:click="gotoIndex()">
+							v-on:click="gotoZhusu()">
 			</uni-list-item>
 			<uni-list-item 	title="现病史"
 							note="现病史内容,保存后显示"
 							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoXianbingshi()">
 			</uni-list-item>
 			<uni-list-item 	title="望诊"
 							note="望诊内容,保存后显示"
 							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoWangzhen()">
 			</uni-list-item>
 			<uni-list-item 	title="闻诊"
 							note="闻诊内容,保存后显示"
 							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoWen2zhen()">
 			</uni-list-item>
 			<uni-list-item 	title="问诊"
 							note="闻诊内容,保存后显示"
 							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoWen4zhen()">
 			</uni-list-item>
 			<uni-list-item 	title="切诊"
 							note="切诊内容,保存后显示"
 							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoQiezhen()">
 			</uni-list-item>	
 			<uni-list-item 	title="中医诊断"
 							note="诊断内容,保存后显示"
 							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoZhongyizhenduan()">
 			</uni-list-item>
 			<uni-list-item 	title="西医诊断"
 							note="诊断内容,保存后显示"
 							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoXiyizhenduan()">
 			</uni-list-item>										
 	        </uni-list>
 		</uni-collapse-item>
 	</uni-collapse>	
 	
 	<uni-collapse @change="change">
+	    <uni-collapse-item title="医嘱建议">
+	        <uni-list>
+	        <uni-list-item 	title="用药建议" 
+							show-extra-icon="true" 
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoYongyaojianyi()">
+			</uni-list-item>
+			<uni-list-item 	title="作息建议"
+							show-extra-icon="true" 
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoZuoxijianyi()">
+			</uni-list-item>
+			<uni-list-item 	title="饮食建议"
+							show-extra-icon="true" 
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoYinshijianyi()">
+			</uni-list-item>
+			<uni-list-item 	title="病情建议"
+							show-extra-icon="true" 
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoBingqingjianyi()">
+			</uni-list-item>
+			<uni-list-item 	title="拒绝记录"
+							show-extra-icon="true" 
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoJujuejilu()">
+			</uni-list-item>
+			<uni-list-item 	title="其他建议"
+							show-extra-icon="true" 
+							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+							v-on:click="gotoQitajianyi()">
+			</uni-list-item>								
+	        </uni-list>
+		</uni-collapse-item>
+	</uni-collapse>		
+
+	
+	<uni-collapse @change="change">
 	    <uni-collapse-item title="检查检验">
 	        <uni-list>
 				<uni-list-item 	title="检验申请单" 
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoJianyanshenqing()">
 				</uni-list-item>
 				<uni-list-item 	title="检查申请单"
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">		
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoJianchashenqing()">		
 				</uni-list-item>
 			</uni-list>
 		</uni-collapse-item>
@@ -77,11 +125,18 @@
 	        <uni-list>
 				<uni-list-item 	title="中药饮片处方" 
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoYinpianchufang()">
 				</uni-list-item>
 				<uni-list-item 	title="中药配方颗粒处方"
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">		
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoPeifangkelichufang()">		
+				</uni-list-item>
+				<uni-list-item 	title="中药综合处方"
+								show-extra-icon="true" 
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoZonghechufang()">
 				</uni-list-item>
 			</uni-list>
 		</uni-collapse-item>
@@ -93,15 +148,17 @@
 				<uni-list-item 	title="中成药处方" 
 								show-extra-icon="true" 
 								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
-								>
+								v-on:click="gotoChengyao()">
 				</uni-list-item>
 				<uni-list-item 	title="化学药处方"
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">		
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoHyaochufang()">		
 				</uni-list-item>
 				<uni-list-item 	title="生物制剂处方"
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">		
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoShengwuzhijichufang()">		
 				</uni-list-item>
 			</uni-list>
 		</uni-collapse-item>
@@ -112,7 +169,8 @@
 	        <uni-list>
 				<uni-list-item 	title="处置单" 
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoChuzhidan()">
 				</uni-list-item>
 			</uni-list>
 		</uni-collapse-item>
@@ -123,40 +181,16 @@
 	        <uni-list>
 				<uni-list-item 	title="其他项目" 
 								show-extra-icon="true" 
-								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
+								:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}"
+								v-on:click="gotoQitaxiangmu()">
 				</uni-list-item>
 			</uni-list>
 		</uni-collapse-item>
 	</uni-collapse>	
 	
-	<uni-collapse @change="change">
-	    <uni-collapse-item title="医嘱建议">
-	        <uni-list>
-	        <uni-list-item 	title="用药建议" 
-							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
-			</uni-list-item>
-			<uni-list-item 	title="作息建议"
-							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
-			</uni-list-item>
-			<uni-list-item 	title="饮食建议"
-							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
-			</uni-list-item>
-			<uni-list-item 	title="病情建议"
-							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
-			</uni-list-item>
-			<uni-list-item 	title="拒绝记录"
-							show-extra-icon="true" 
-							:extra-icon="{color: '#4cd964',size: '22',type: 'spinner'}">
-			</uni-list-item>					
-	        </uni-list>
-		</uni-collapse-item>
-	</uni-collapse>	
+
 	
-	<button @click="openPopup">完诊</button>
+	<button @click="openPopup">下一步</button>
 	    <uni-popup ref="popup" type="bottom">
 	        <button>完诊</button>
 			<button>暂存</button>
@@ -187,12 +221,131 @@
 		},
 		methods: {
 			//页面跳转
-			gotoIndex(){
+			gotoHuanzhexinxi(){
+				uni.navigateTo({
+				url: '../room/huanzhexinxi/huanzhexinxi'
+				});
+			},
+			gotoZhusu(){
 				uni.navigateTo({
 				url: 'zhusu2/zhusu2'
 				});
 			},
-
+			gotoXianbingshi(){
+				uni.navigateTo({
+				url: 'xianbingshi/xianbingshi'
+				});
+			},			
+			gotoWangzhen(){
+				uni.navigateTo({
+				url: 'wangzhen/wangzhen'
+				});
+			},
+			gotoWen2zhen(){
+				uni.navigateTo({
+				url: 'wen2zhen/wen2zhen'
+				});
+			},
+			gotoWen4zhen(){
+				uni.navigateTo({
+				url: 'wen4zhen/wen4zhen'
+				});
+			},
+			gotoQiezhen(){
+				uni.navigateTo({
+				url: 'qiezhen/qiezhen'
+				});
+			},
+			gotoZhongyizhenduan(){
+				uni.navigateTo({
+				url: 'zhongyizhenduan/zhongyizhenduan'
+				});
+			},
+			gotoXiyizhenduan(){
+				uni.navigateTo({
+				url: 'xiyizhenduan/xiyizhenduan'
+				});
+			},
+			gotoJianchashenqing(){
+				uni.navigateTo({
+				url: 'jianchashenqing/jianchashenqing'
+				});
+			},
+			gotoJianyanshenqing(){
+				uni.navigateTo({
+				url: 'jianyanshenqing/jianyanshenqing'
+				});
+			},
+			gotoYinpianchufang(){
+				uni.navigateTo({
+				url: 'yinpianchufang/yinpianchufang'
+				});
+			},
+			gotoPeifangkelichufang(){
+				uni.navigateTo({
+				url: 'peifangkelichufang/peifangkelichufang'
+				});
+			},
+			gotoZonghechufang(){
+				uni.navigateTo({
+				url: 'zonghechufang/zonghechufang'
+				});
+			},
+			gotoChengyao(){
+				uni.navigateTo({
+				url: 'chengyao/chengyao'
+				});
+			},
+			gotoHyaochufang(){
+				uni.navigateTo({
+				url: 'huayaochufang/huayaochufang'
+				});
+			},
+			gotoShengwuzhijichufang(){
+				uni.navigateTo({
+				url: 'shengwuzhijichufang/shengwuzhijichufang'
+				});
+			},
+			gotoChuzhidan(){
+				uni.navigateTo({
+				url: 'chuzhidan/chuzhidan'
+				});
+			},
+			gotoQitaxiangmu(){
+				uni.navigateTo({
+				url: 'qitaxiangmu/qitaxiangmu'
+				});
+			},
+			gotoYongyaojianyi(){
+				uni.navigateTo({
+				url: 'yongyaojianyi/yongyaojianyi'
+				});
+			},
+			gotoZuoxijianyi(){
+				uni.navigateTo({
+				url: 'xiuxijianyi/xiuxijianyi'
+				});
+			},
+			gotoYinshijianyi(){
+				uni.navigateTo({
+				url: 'yinshijianyi/yinshijianyi'
+				});
+			},
+			gotoBingqingjianyi(){
+				uni.navigateTo({
+				url: 'bingqingjianyi/bingqingjianyi'
+				});
+			},
+			gotoJujuejilu(){
+				uni.navigateTo({
+				url: 'jujuejilu/jujuejilu'
+				});
+			},
+			gotoQitajianyi(){
+				uni.navigateTo({
+				url: 'qitajianyi/qitajianyi'
+				});
+			},
 			//弹出层组件
 			openPopup(){
 			            this.$refs.popup.open()

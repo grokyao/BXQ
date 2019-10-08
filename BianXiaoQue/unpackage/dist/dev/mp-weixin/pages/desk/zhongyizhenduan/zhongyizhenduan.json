@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "uni-list": "/components/uni-list/uni-list",
+    "uni-list-item": "/components/uni-list-item/uni-list-item",
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "bjx-inputs": "/components/bjx-inputs/bjx-inputs"
+  }
+}

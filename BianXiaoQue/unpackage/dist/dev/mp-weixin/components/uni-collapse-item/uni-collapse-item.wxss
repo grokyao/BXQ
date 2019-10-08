@@ -114,12 +114,12 @@
 	        flex-direction: column
 }
 .uni-collapse-cell__title-text {
-	font-size: 32rpx;
+	font-size: 38rpx;
 	-o-text-overflow: ellipsis;
 	   text-overflow: ellipsis;
 	white-space: nowrap;
 	color: inherit;
-	line-height: 1.5;
+	line-height: 2;
 	overflow: hidden
 }
 .uni-collapse-cell__content {

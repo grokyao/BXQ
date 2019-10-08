@@ -207,11 +207,11 @@
 	}
 
 	.uni-collapse-cell__title-text {
-		font-size: 32upx;
+		font-size: 38upx;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		color: inherit;
-		line-height: 1.5;
+		line-height: 2;
 		overflow: hidden
 	}
 

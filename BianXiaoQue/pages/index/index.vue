@@ -5,7 +5,8 @@
 			:note="'待诊'+chengedate.daizhen+'人,'+'已诊'+chengedate.yizhen+'人'"
 			showBadge="true" :badgeText="chengedate.benzhensuodaizhen"
 	        show-extra-icon="true" 
-	        :extra-icon="{color: '#000000',size: '32',type: 'contact'}">
+	        :extra-icon="{color: '#000000',size: '32',type: 'contact'}"
+			v-on:click="gotoHuanzheliebiao()">
 	    </uni-list-item>
 	</uni-list>
 
@@ -92,7 +93,12 @@
 				//	},1000)
 		},
 		methods: {
-		
+		//页面跳转
+				gotoHuanzheliebiao(){
+					uni.navigateTo({
+					url: '../room/huanzheliebiao/huanzheliebiao'
+					});
+				},
 		},
 		components: {uniList,uniListItem}
 

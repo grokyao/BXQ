@@ -22,7 +22,7 @@
 			}
         }
         ,{
-            "path" : "pages/room/yysufferer/yysufferer",
+            "path" : "pages/room/yuyuehuanzhe/yuyuehuanzhe",
             "style" : {
 				"navigationBarTitleText": "预约患者"	
 			}
@@ -40,7 +40,99 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/room/sufferer/sufferer",
+            "path" : "pages/room/huanzhexinxi/huanzhexinxi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/xianbingshi/xianbingshi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/room/huanzheliebiao/huanzheliebiao",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/wen2zhen/wen2zhen",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/wen4zhen/wen4zhen",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/qiezhen/qiezhen",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/zhongyizhenduan/zhongyizhenduan",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/xiyizhenduan/xiyizhenduan",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/jianyanshenqing/jianyanshenqing",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/jianchashenqing/jianchashenqing",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/yinpianchufang/yinpianchufang",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/peifangkelichufang/peifangkelichufang",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/zonghechufang/zonghechufang",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/huayaochufang/huayaochufang",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/shengwuzhijichufang/shengwuzhijichufang",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/chuzhidan/chuzhidan",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/qitaxiangmu/qitaxiangmu",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/yongyaojianyi/yongyaojianyi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/xiuxijianyi/xiuxijianyi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/yinshijianyi/yinshijianyi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/bingqingjianyi/bingqingjianyi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/jujuejilu/jujuejilu",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/qitajianyi/qitajianyi",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/desk/wangzhen/wangzhen",
             "style" : {}
         }
     ],
